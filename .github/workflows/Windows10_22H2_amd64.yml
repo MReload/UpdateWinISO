@@ -34,11 +34,11 @@ jobs:
         cd Win_ISO_Patching_Scripts
         
         # 下载镜像
-        curl -L -o zh-cn_windows_10_consumer_editions_version_22h2_updated_oct_2025_x64_dvd_38efd00d.7z.001 https://github.com/yuanpeirong/UpdateWinISO/releases/download/Windows10ISO/zh-cn_windows_10_consumer_editions_version_22h2_updated_oct_2025_x64_dvd_38efd00d.7z.001
-        curl -L -o zh-cn_windows_10_consumer_editions_version_22h2_updated_oct_2025_x64_dvd_38efd00d.7z.002 https://github.com/yuanpeirong/UpdateWinISO/releases/download/Windows10ISO/zh-cn_windows_10_consumer_editions_version_22h2_updated_oct_2025_x64_dvd_38efd00d.7z.002
-        curl -L -o zh-cn_windows_10_consumer_editions_version_22h2_updated_oct_2025_x64_dvd_38efd00d.7z.003 https://github.com/yuanpeirong/UpdateWinISO/releases/download/Windows10ISO/zh-cn_windows_10_consumer_editions_version_22h2_updated_oct_2025_x64_dvd_38efd00d.7z.003
-        curl -L -o zh-cn_windows_10_consumer_editions_version_22h2_updated_oct_2025_x64_dvd_38efd00d.7z.004 https://github.com/yuanpeirong/UpdateWinISO/releases/download/Windows10ISO/zh-cn_windows_10_consumer_editions_version_22h2_updated_oct_2025_x64_dvd_38efd00d.7z.004
-        7z x zh-cn_windows_10_consumer_editions_version_22h2_updated_oct_2025_x64_dvd_38efd00d.7z.001
+        curl -L -o en-us_windows_10_business_editions_version_22h2_updated_oct_2025_x64_dvd_d2eef4b0.7z.001 https://github.com/MReload/UpdateWinISO/releases/download/win10proen/en-us_windows_10_business_editions_version_22h2_updated_oct_2025_x64_dvd_d2eef4b0.7z.001
+        curl -L -o en-us_windows_10_business_editions_version_22h2_updated_oct_2025_x64_dvd_d2eef4b0.7z.002 https://github.com/MReload/UpdateWinISO/releases/download/win10proen/en-us_windows_10_business_editions_version_22h2_updated_oct_2025_x64_dvd_d2eef4b0.7z.002
+        curl -L -o en-us_windows_10_business_editions_version_22h2_updated_oct_2025_x64_dvd_d2eef4b0.7z.003 https://github.com/MReload/UpdateWinISO/releases/download/win10proen/en-us_windows_10_business_editions_version_22h2_updated_oct_2025_x64_dvd_d2eef4b0.7z.003
+        curl -L -o en-us_windows_10_business_editions_version_22h2_updated_oct_2025_x64_dvd_d2eef4b0.7z.004 https://github.com/MReload/UpdateWinISO/releases/download/win10proen/en-us_windows_10_business_editions_version_22h2_updated_oct_2025_x64_dvd_d2eef4b0.7z.004
+        7z x en-us_windows_10_business_editions_version_22h2_updated_oct_2025_x64_dvd_d2eef4b0.7z.001
         ls
 
     # 集成更新
@@ -63,7 +63,7 @@ jobs:
       run: |
         cd /d D:\a\UpdateWinISO\Win_ISO_Patching_Scripts
         dir
-        del /F /S /Q zh-cn_windows_10_consumer_editions_version_22h2_updated_oct_2025_x64_dvd_38efd00d.iso
+        del /F /S /Q en-us_windows_10_business_editions_version_22h2_updated_oct_2025_x64_dvd_d2eef4b0.iso
         dir
 
     # 打包
